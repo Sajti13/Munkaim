@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animálit fix menü feladat megoldása</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        @keyframes beuszas {
+            from {
+                left: -200px;
+            }
+
+            to {
+                left: 0px;
+            }
+        }
+
+        @keyframes visszauszas {
+            from {
+                left: 0px;
+            }
+
+            to {
+                left: -200px;
+            }
+        }
+
+        body {
+            background-image: url("hatter.jpg");
+            background-size: cover;
+        }
+
+        .gomb {
+            width: 300px;
+            height: 100px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            box-shadow: 2px 2px 5px black;
+            position: fixed;
+            border: 1px solid black;
+            left: -200px;
+            background-color: rgba(0, 0, 0, 0.6);
+            animation-name: visszauszas;
+            animation-duration: 2s;
+            animation-fill-mode: backwards;
+        }
+
+        .gomb:hover {
+            animation-name: beuszas;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+
+        .szoveg {
+            font-weight: bold;
+            font-size: 30px;
+            color: white;
+            position: absolute;
+            top: 35px;
+            left: 50px;
+        }
+
+        img {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            height: 80px;
+        }
+
+        #htmlGomb {
+            top: 100px;
+        }
+
+        #cssGomb {
+            top: 250px;
+        }
+
+        #jsGomb {
+            top: 400px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <a href="https://www.w3schools.com/html/default.asp" target="_blank">
+        <div class="gomb" id="htmlGomb">
+            <div class="szoveg">HTML</div>
+            <img src="html.svg" alt="HTML logo" title="HTML logo">
+        </div>
+    </a>
+
+    <a href="https://www.w3schools.com/css/default.asp" target="_blank">
+        <div class="gomb" id="cssGomb">
+            <div class="szoveg">CSS</div>
+            <img src="css.svg" alt="CSS logo" title="CSS logo">
+        </div>
+    </a>
+
+    <a href="https://www.w3schools.com/js/default.asp" target="_blank">
+        <div class="gomb" id="jsGomb">
+            <div class="szoveg">JavaScript</div>
+            <img src="javascript.svg" alt="JavaScript logo" title="JavaScript logo">
+        </div>
+    </a>
+</body>
+
+</html>

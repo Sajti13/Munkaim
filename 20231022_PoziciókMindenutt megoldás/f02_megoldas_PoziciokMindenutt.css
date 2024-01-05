@@ -1,0 +1,122 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+
+.kekKocka {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: absolute;
+}
+
+.zoldKocka {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    position: fixed;
+}
+
+#tartalom {
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#abs1 {
+    top: 0px;
+    left: 0px;
+}
+
+#abs2 {
+    top: 0px;
+    left: 150px;
+}
+
+#abs3 {
+    top: 0px;
+    right: 0px;
+}
+
+#abs4 {
+    right: 0px;
+    top: 150px;
+}
+
+#abs5 {
+    bottom: 0px;
+    right: 0px;
+}
+
+#abs6 {
+    bottom: 0px;
+    right: 150px;
+}
+
+#abs7 {
+    bottom: 0px;
+    left: 0px;
+}
+
+#abs8 {
+    bottom: 150px;
+    left: 0px;
+}
+
+#abs9 {
+    top: 150px;
+    left: 150px;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+}
+
+#fix1 {
+    top: 0px;
+    left: 0px;
+}
+
+#fix2 {
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#fix3 {
+    top: 0px;
+    right: 0px;
+}
+
+#fix4 {
+    top: 50%;
+    right: 0px;
+    transform: translate(0, -50%);
+}
+
+#fix5 {
+    bottom: 0px;
+    right: 0px;
+}
+
+#fix6 {
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#fix7 {
+    bottom: 0px;
+    left: 0px;
+}
+
+#fix8 {
+    top: 50%;
+    left: 0px;
+    transform: translate(0, -50%);
+}

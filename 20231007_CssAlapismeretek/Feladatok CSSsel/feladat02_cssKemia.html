@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szövegformázás - Kémia CSS-sel</title>
+    <style>
+        .felkover {
+            font-weight: bold;
+        }
+
+        .dolt {
+            font-style: italic;
+        }
+
+        .alahuzott {
+            text-decoration: underline;
+        }
+
+        .athuzott {
+            text-decoration: line-through;
+        }
+
+        .sarhaHatter {
+            background-color: yellow;
+        }
+
+        .zoldBetu {
+            color: green;
+        }
+
+        .kekBetu {
+            color: blue;
+        }
+
+        .nagyobbBetu {
+            font-size: 32px;
+        }
+
+        .nagyBetu {
+            font-size: 24px;
+        }
+
+        .felsoIndex {
+            vertical-align: super;
+            font-size: smaller;
+        }
+
+        .alsoIndex {
+            vertical-align: sub;
+            font-size: smaller;
+        }
+
+        /*Optimális megoldáshoz*/
+        .nagyZold {
+            font-size: 32px;
+            color: green;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .nagyKek {
+            font-size: 24px;
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Megoldás csak CSS elemek használatával</h1>
+    <span class="nagyobbBetu zoldBetu alahuzott felkover">A molekuláris vegyületek képletei</span><br><br>
+    <span class="kekBetu nagyBetu felkover">Tapasztalati képlet</span><br><br>
+    A tapasztalati képlet a vegyület sztöchiometriai összetételét adja meg és az elemek egymás <span
+        class="athuzott">után</span> mellé írt vegyjelét
+    tartalmazza.<br>
+    <span class="alahuzott">A vegyjelek alsó indexe fejezi ki az összetevők legegyszerűbb arányát.</span> A tapasztalati
+    képlet nem minden esetben adja
+    meg, melyik vegyületről van szó.<br>
+    <span class="dolt">pl. CH<span class="alsoIndex">2</span> (Ez megfelel pl. az eténnek és a propénnek
+        is.)</span><br><br>
+    <span class="kekBetu nagyBetu felkover">Molekulaképlet</span><br><br>
+    A molekulaképlet vagy összegképlet a valóságban önállóan létező molekula minőségi és mennyiségi összetételét
+    fejezi<br>
+    ki,
+    amely alapján kiszámítható a relatív molekulatömeg. <span class="sarhaHatter">Megegyezhet a tapasztalati
+        képlettel.</span><br>
+    <span class="dolt">pl. C<span class="alsoIndex">2</span>H<span class="alsoIndex">4</span> (etén)</span><br><br>
+    <span class="kekBetu nagyBetu felkover">Szerkezeti képlet, vagy más néven konstitúciós képlet</span><br><br>
+    A különböző szerkezeti képletek a molekulák szerkezetét is leírják, különböző, kiemelt szempontok szerint:<br>
+    feltüntetik a molekulát alkotó atomok kapcsolódását és azok térbeli elrendeződését.
+
+
+    <h1>Optimális megoldás CSS és HTML használatával</h1>
+
+    <span class="nagyZold">A molekuláris vegyületek képletei</span><br><br>
+    <span class="nagyKek">Tapasztalati képlet</span><br><br>
+    A tapasztalati képlet a vegyület sztöchiometriai összetételét adja meg és az elemek egymás <s>után</s> mellé írt
+    vegyjelét tartalmazza. <br>
+    <u>A vegyjelek alsó indexe fejezi ki az összetevők legegyszerűbb arányát.</u> A tapasztalati képlet nem minden
+    esetben adja meg, melyik vegyületről van szó.<br>
+    <i>pl. CH<sub>2</sub> (Ez megfelel pl. az eténnek és a propénnek is.)</i><br><br>
+    <span class="nagyKek">Molekulaképlet</span><br><br>
+    A molekulaképlet vagy összegképlet a valóságban önállóan létező molekula minőségi és mennyiségi összetételét fejezi
+    ki, <br>
+    amely alapján kiszámítható a relatív molekulatömeg. <mark>Megegyezhet a tapasztalati képlettel.<br></mark>
+    <i>pl. C<sub>2</sub>H<sub>4</sub> (etén)</i><br><br>
+    <span class="nagyKek">Szerkezeti képlet, vagy más néven konstitúciós képlet</span><br><br>
+    A különböző szerkezeti képletek a molekulák szerkezetét is leírják, különböző, kiemelt szempontok szerint: <br>
+    feltüntetik a molekulát alkotó atomok kapcsolódását és azok térbeli elrendeződését.
+</body>
+
+</html>
