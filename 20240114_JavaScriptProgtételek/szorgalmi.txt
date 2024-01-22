@@ -1,0 +1,5 @@
+Próbálj meg készíteni saját feladatokat,
+szekvencia
+szelekció és 
+iteráció 
+témakörökben. Akár megoldást is megpróbálhatod elkészíteni :)
